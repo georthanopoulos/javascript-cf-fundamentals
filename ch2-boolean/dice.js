@@ -1,7 +1,7 @@
 let dice;
 let times = 0;
 
-do {
+do {                                                                //floor = αποκοπή δεκαδικών ψηφίων.
     dice = Math.floor(Math.random() * 6) + 1                       // (max - min + 1)  gia 1 - 6
     times++;
     console.log(`Try ${times}: dice ${dice}`)
