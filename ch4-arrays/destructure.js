@@ -16,7 +16,7 @@ console.log(others);
 let a = 10;
 let b = 20;
 
-//destructure! Left = Array and Right = syntax. πρωτα εκτελειται το δεξιο μερος. φτιαχνει ενα προσωρινο πινακα. Μετα γινεται destructure και δεν χρειαζεται  LET 'η const γιατι εχουν δηλωθει παραπανω! 
+//destructure! Left[] = syntax NOT Array and Right[] = Array. Πρώτα εκτελείται το δεξιο μερος. Φτιάχνει ένα προσωρινό πίνακα. Μετά γίνεται destructure και δεν χρειάζεται  LET 'η const γιατί εχουν δηλωθεί παραπάνω! 
 [a, b] = [b, a];
 
 console.log('a=' + a)
