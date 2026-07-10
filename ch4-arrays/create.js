@@ -1,8 +1,8 @@
 const arr = [];                             // empty array
 const arr1 = [1, 2, 3, 4, 5];               // populate με literal
-const arr2 = [1, 'Alice', 3.4, true];
+const arr2 = [1, 'Alice', 3.4, true];       // mixed type array
 const sparseArr = [1, , 3];                 // sparse array
-const arr3 = [, , ,];                         // length is 3 (number of commas)
+const arr3 = [, , ,];                       // length is 3 (number of commas)
 
 // Array is Contructor function
 const arr4 = Array(3)                       // length 3 με empty elements
@@ -10,7 +10,7 @@ const arr5 = Array(2, 3, 5, 8)              // 4 elements
 const grid = [[1, 2], [3, 4], [5, 6]]
 const objArr = [{ id: 1 }, { id: 2 }, { id: 3 }]
 
-console.log(arr1[0]);           // 1
+console.log(arr1[0]);                       // 1
 
 
 for (let i = 0; i < arr1.length; i++) {
