@@ -4,6 +4,6 @@ const queue = [1, 2, 3, 4, 5];
 queue.push(6);
 console.log(queue);
 
-const first = queue.shift();
+const first = queue.shift();         // shift() -> delete first element -- unshift() insert first element
 console.log(first);
 console.log(queue);

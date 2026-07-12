@@ -19,6 +19,6 @@ console.log(displayName);
 
 
 const user = { name: 'Alice' }                      // within moustache beacuse it is an object
-const helloName = user && user.name;                //the first leg is expected to be true. Then, ceck the 
+const helloName = user && user.name;                //the first leg is expected to be true. Then, check the 
                                                     //second which is Alice. so it is truthy and it returns the right side. if the first leg was null, user would be returned instead.
 console.log(helloName);                                                    

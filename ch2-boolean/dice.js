@@ -8,3 +8,5 @@ do {                                                                //floor = α
 } while (dice !== 6)                                            //odo einai diaforo toy 6. oso den einai 6!
 
 console.log(`it took ${times} to get 6.`)
+
+//Η Math.random() παράγει έναν τυχαίο δεκαδικό αριθμό από 0 (συμπεριλαμβάνεται) έως 1 (δεν συμπεριλαμβάνεται).

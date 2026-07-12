@@ -15,7 +15,7 @@ console.log("Negative div by zero: " + (-12 / 0));     //-Infinity
 let num = Number("12");              // num -> 12
 
 if (Number.isInteger(num)) {
-    console.log("num is intiger: " + Number.isInteger(num))
+    console.log("num is integer: " + Number.isInteger(num))
 } else {
     console.log("Not an integer")
 }

@@ -44,7 +44,7 @@ const products = [
     { title: 'keyboard', price: 80, stock: 20 },
 ];
 
-const totalStock = products.reduce((total, item) => total + item.stock, 0);
+const totalStock = products.reduce((total, item) => total + item.stock, 0);      //total-accumulatoe
 console.log(totalStock);
 
 

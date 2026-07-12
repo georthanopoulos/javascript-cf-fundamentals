@@ -1,9 +1,9 @@
 
 // Explicit Conversions
-console.log("Boolean(1)" + Boolean(1));
-console.log("Boolean(0)" + Boolean(0));
-console.log("Boolean('')" + Boolean(''));
-console.log("Boolean('Hello')" + Boolean('Hello'));
+console.log("Boolean(1): " + Boolean(1));
+console.log("Boolean(0): " + Boolean(0));
+console.log("Boolean(''): " + Boolean(''));
+console.log("Boolean('Hello'): " + Boolean('Hello'));
 
 // Loop Conditions - Iterations --(1) = for ever
 while (1) {
