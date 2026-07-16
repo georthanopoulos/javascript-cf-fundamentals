@@ -47,5 +47,52 @@ function palindrome(str1) {
 // 2nd way --classic
 function palindrome2(str1) {
     const reversed = str1.trim().toUpperCase().split(/\s+/).reverse().join('')
-    return reversed === str1.trim().toUpperCase().split().join('')
+    return reversed === str1.trim().toUpperCase().split(/\s+/).join('')
 }
+
+
+
+// Άσκηση 3
+// Μία συνάρτηση μετράει πόσα φωνήεντα 
+// [a, e, i, 0, u] περιεχει ένα string ανεξαρτήτως
+// κεφαλαίων / πεζών
+
+function countVowels(str2) {
+    const vowels = [...'aei0u']
+    let count = 0
+
+    for (const ch of str.toLowerCase()) {
+        if (vowels.includes(ch)) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+console.log(countVowels('Javascript'))
+
+// Άσκηση 4
+// Μία συνάρτηση που παίρνει ως είσοδο μία πρόταση
+// και να επιστρέφει την ίδια πρόταση αλλά με το 
+// πρώτο γράμμα κάθε λέξης κεφαλαίο και τα υπόλοιπα πεζά
+// και ένα κενό μεταξύ των λέξεων 
+// 'codING faCtory' -> 'Coding Factory'
+
+// 1st way
+function capitalizeWords(sentence) {
+    return sentence
+        .split(' ')                                          // Χωρίζει την πρόταση σε πίνακα λέξεων με βάση το κενό
+        .filter(word => word !== '')                                   // Αφαιρεί τυχόν πολλαπλά συνεχόμενα κενά
+        .map(word => {                                                 // Παίρνει το 1ο γράμμα και το κάνει κεφαλαίο
+            return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();   // Παίρνει τα υπόλοιπα γράμματα και τα κάνει πεζά
+        })
+        .join(' ');                                  // Ενώνει τις λέξεις ξανά σε πρόταση με ένα κενό ανάμεσά τους
+}
+
+// Παράδειγμα χρήσης:
+console.log(capitalizeWords('codING faCtory'));           // Εμφανίζει: 'Coding Factory'
+console.log(capitalizeWords('HELLO   world'));            // Εμφανίζει: 'Hello World'
+
+
+// 2nd way --In Lecture
