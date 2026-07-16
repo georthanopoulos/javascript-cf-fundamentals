@@ -92,7 +92,68 @@ function capitalizeWords(sentence) {
 
 // Παράδειγμα χρήσης:
 console.log(capitalizeWords('codING faCtory'));           // Εμφανίζει: 'Coding Factory'
-console.log(capitalizeWords('HELLO   world'));            // Εμφανίζει: 'Hello World'
+
 
 
 // 2nd way --In Lecture
+function capitalize(str) {
+    if (!str.trim()) return ''    //must do check! -> "if not string"
+
+    let returnedSentence = '';
+    const tokens = str.trim().split(/\s+/)
+
+    for (const token of tokens) {
+        const newToken1 = token[0].toUpperCase()
+        const newToken2 = token.slice(1).toLowerCase()
+        returnedSentence += newToken1 + newToken2 + ' '
+    }
+    return returnedSentence.trim()
+}
+
+console.log(capitalize('codING faCtory'));
+
+
+
+// Άσκηση 5 - Interview
+// Μία συνάρτηση που παίρνει ένα κείμενο και 
+// μία λέξη και επιστρέφει πόσες φορές εμφανίζεται
+// αυτή η λέξη μέσα στο κείμενο (ανεξαρτήτων πεζών / κεφαλαίων)
+
+//1st way
+function wordCount(text, str) {
+    if (!text.trim() || !str.trim()) return 0
+
+    const words = text.trim().toLowerCase().split(/\s+/)
+    const searchTerm = str.trim().toLowerCase()
+    let times = 0;
+
+    for (const word of words) {
+        if (word === searchTerm) times++
+    }
+    return times;
+}
+
+//2nd way --Regular Expression (RegEx)
+function wordCount2(text, str) {
+    const pattern = new RegExp('\\b + str.trim() + \\b', 'gi')    // \\b => boundaries --gi => Global appearances Incensitive.
+    const matches = text.match(pattern);
+
+    return matches === null ? 0 : matches.length;
+}
+
+
+// Άσκηση 6
+// Μία συνάρτηση που παίρνει ως είσοδο τον αριθμό κάρτας
+// π.χ: '1234 5678 2345 6543' και επιστρέφει masked όλα τα ψηφία εκτός απο τα 4 τελευταία, π.χ: **** **** **** 6543
+
+function maskCardNumber(cardNumber) {
+    if (!cardNumber.trim()) return
+
+    const digits = cardNumber.trim().split(' ').join('')
+    const lastFourDigits = digits.slice(-4)
+    const masked = '*'.repeat(digits.length - 4)
+
+    return masked + lastFourDigits;
+}
+
+console.log(maskCardNumber('1234 5678 2345 6543'));
