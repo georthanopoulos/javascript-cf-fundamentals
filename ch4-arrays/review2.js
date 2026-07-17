@@ -91,6 +91,7 @@ function removeAllOccurances(arr, valueToRemove) {
 // Μία συνάρτηση που βρίσκει τον 2ο μεγαλύτερο αριθμό
 // ενός πίνακα. [7, 7, 4] ο 2ος μεγαλύτερος είναι το 4.
 
+// 1st way --Preferred
 function secondMax(arr) {
     if (!Array.isArray(arr) || arr.length < 2) {
         return
@@ -112,3 +113,12 @@ function secondMax(arr) {
 }
 
 console.log(secondMax([7, 7, 4]));
+
+
+// 2nd way
+
+function secondMax(arr) {
+    const uniqueNumbers = [...new Set(arr)]
+    uniqueNumbers.sort((a, b) => b - a)
+    return uniqueNumbers[1]
+}
