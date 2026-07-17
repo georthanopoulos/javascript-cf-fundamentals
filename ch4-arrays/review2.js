@@ -97,7 +97,7 @@ function secondMax(arr) {
     }
 
     let firstMax = -Infinity;
-    let secondMax =  -Infinity;
+    let secondMax = -Infinity;
 
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] > firstMax) {
