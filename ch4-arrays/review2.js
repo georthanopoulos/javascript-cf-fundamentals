@@ -91,7 +91,7 @@ function removeAllOccurances(arr, valueToRemove) {
 // Μία συνάρτηση που βρίσκει τον 2ο μεγαλύτερο αριθμό
 // ενός πίνακα. [7, 7, 4] ο 2ος μεγαλύτερος είναι το 4.
 
-// 1st way --Preferred
+// 1st way --classic
 function secondMax(arr) {
     if (!Array.isArray(arr) || arr.length < 2) {
         return
@@ -115,10 +115,23 @@ function secondMax(arr) {
 console.log(secondMax([7, 7, 4]));
 
 
-// 2nd way
-
+// 2nd way --advanced
 function secondMax(arr) {
     const uniqueNumbers = [...new Set(arr)]
     uniqueNumbers.sort((a, b) => b - a)
     return uniqueNumbers[1]
+}
+
+// Άσκηση 6
+// Μία συνάρτηση που να παίρνει ως είσοδο ένα πίνακα
+// και ένα θετικό offset και να κάνει αριστερό και κυκλικό
+// shift κατα offset θέσεις. [1, 2, 3] -> [2, 3, 1]
+
+function shiftLeft(arr, offset) {
+    let shiftedArr = [];
+    const normalizedOffset = offset % arr.length;
+
+    for (let i = 0; i < arr.length; i++) {
+        shiftedArr[(i - normalizedOffset + arr.length) % arr.length] = arr[i];
+    }
 }
