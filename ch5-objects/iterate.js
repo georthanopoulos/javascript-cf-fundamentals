@@ -8,11 +8,11 @@ const person = {
 
 
 for (let key in person) {
-    console.log(`${key}, ${person[key]}`)
+    console.log(`${key}: ${person[key]}`)
 }
 
 for (const [key, value] of Object.entries(person)) {
-    console.log(`${key}, ${value}`)
+    console.log(`${key}: ${value}`)
 }
 
 Object.entries(person).forEach(([key, value]) => {                                // Destructure !
