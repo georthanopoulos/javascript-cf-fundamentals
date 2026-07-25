@@ -3,10 +3,10 @@ const user = {
     firstname: "Alice"
 }
 
-// Mutable Add
+// //Mutable Add
 // user.lastname = "W."
 
-// Immutable Add -- Fresh Copy
+// //Immutable Add -- Fresh Copy
 // const addToObj = (obj, field, value) => ({ ...obj, [field]: value })
 // const newObj = addToObj(user, "lastname", "W.")
 // console.log(user)
@@ -14,11 +14,11 @@ const user = {
 
 
 
-// Mutable Update
+// //Mutable Update
 // user.firstname = "Maria"
 // console.log(user)
 
-// Immutable Update -- Fresh Copy
+// //Immutable Update -- Fresh Copy
 // const updateObj = (obj, field, newVal) => ({...obj, [field]: newVal})
 // const updatedObj = updateObj(user, "firstname", "Maria2")
 // console.log(user)
