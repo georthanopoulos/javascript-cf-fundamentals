@@ -28,7 +28,7 @@ const user = {
 // Immutable delete
 
 const deleteFromObj = (obj, field) => {
-    const { [field]: _, ...objToReturn } = obj
+    const { [field]: _, ...objToReturn } = obj             // _, -> Intentionally ignored
     return objToReturn
 }
 
