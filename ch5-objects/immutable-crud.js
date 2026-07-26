@@ -2,9 +2,11 @@ const user = {
     id: 1,
     firstname: "Alice"
 }
+// console.log(user);
 
 // //Mutable Add
 // user.lastname = "W."
+// console.log(user);
 
 // //Immutable Add -- Fresh Copy
 // const addToObj = (obj, field, value) => ({ ...obj, [field]: value })

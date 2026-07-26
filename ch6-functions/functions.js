@@ -1,6 +1,6 @@
 // 1. Basic Function Syntax
 function sayHello(name) {
-    return `Hello ${name}`
+    return `Hello, ${name}`
 }
 
 console.log(sayHello('Alice'))
