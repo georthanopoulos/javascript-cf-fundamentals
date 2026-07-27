@@ -113,7 +113,7 @@ const createUser = (username, role) => ({ usename: username, role: role })
 // Hoisting
 console.log(hello('Alice'))
 
-// Hoisting
+// Hoisting                              // Hoisting -- Ανύψωση
 function hello(name) {                   // Tρεχει κανονικα το παραπανω console.log παρ ολο που ειναι 
     return `Hello ${name}`               // πριν την δηλωση της function. Η JS ανεβαζει πρωτη αυτοματα τη function.
 }
@@ -139,7 +139,7 @@ processUser('online-user', (user) => {
 function createCounter() {
     let count = 0              // Private
 
-    return function () {    // ta function dhmioyrgoyn ena scope poy synexizei kai diathreitai! encapsulation way
+    return function () {    // ta function dhmioyrgoyn ena scope poy synexizei kai diathreitai! --Εncapsulation way
         count++
         return count
     }
