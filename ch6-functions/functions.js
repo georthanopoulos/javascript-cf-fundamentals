@@ -17,7 +17,7 @@ const multiply = (a, b) => a * b;
 
 console.log(multiply(4, 6))
 
-// Optional Params
+// Optional Params - older way of coding
 function createButton(text, color) {
     color = color || 'blue'
     console.log(text, color)
