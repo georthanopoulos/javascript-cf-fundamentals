@@ -1,4 +1,16 @@
 .root {
   min-height: 90vh;
-  min-width: 90dvh;
+  min-height: 90dvh;
+}
+
+.color-zero {
+  color: black;
+}
+
+.color-positive {
+  color: green;
+}
+
+.color-negative {
+  color: red;
 }
