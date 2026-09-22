@@ -1,5 +1,5 @@
-import { deleteNote, getNotes, insertNote, strikeThrough } from "./model";
-import { renderGRDate, renderNotes } from "./view";
+import { deleteNote, getNotes, insertNote, strikeThrough } from "./model.js";
+import { renderGRDate, renderNotes } from "./view.js";
 
 const inputNote = document.getElementById("inputNote");
 const addButton = document.getElementById("addNoteBtn");
