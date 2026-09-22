@@ -40,6 +40,6 @@ function onDeleteHandler(key) {
   renderNotes(getNotes(), handlers);
 }
 
-// renderGRDate();
-setInterval(1000, renderGRDate);
+renderGRDate();
+setInterval(renderGRDate, 1000);
 renderNotes(getNotes(), handlers);
