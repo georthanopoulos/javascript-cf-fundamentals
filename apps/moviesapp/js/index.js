@@ -74,10 +74,12 @@ function onShowMoreClicked() {
   $("#extended").slideToggle(1000);
 }
 
+// Helper global 1
 function showComponent(component) {
   return $(component).removeClass("hidden");
 }
 
+// Helper global 2
 function hideComponent(component) {
   return $(component).addClass("hidden");
 }
